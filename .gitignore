@@ -10,8 +10,8 @@ __pycache__/
 *.pyo
 
 # Dataset
-data/
-*.csv
+#data/
+#*.csv
 
 # IDEs
 .vscode/
@@ -20,3 +20,4 @@ data/
 # OS junk
 .DS_Store
 Thumbs.db
+
