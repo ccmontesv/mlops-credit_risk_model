@@ -2,7 +2,7 @@
 
 This project implements a **machine learning pipeline** to assess credit risk using modern MLOps practices. The pipeline is orchestrated with **Apache Airflow**, packaged with **Docker**, and includes **model optimization** using **Optuna**, **feature importance analysis** using **SHAP**, and **model tracking** via **MLflow**.
 
-## 🧩 Project Structure
+##  Project Structure
 
 ```
 .
@@ -16,9 +16,9 @@ This project implements a **machine learning pipeline** to assess credit risk us
 └── README.md                        # Project overview
 ```
 
-## ⚙️ Components
+##  Components
 
-### 🔁 Airflow
+###  Airflow
 - Orchestrates the ML steps:
   - Preprocessing
   - Hyperparameter tuning with Optuna
@@ -26,20 +26,20 @@ This project implements a **machine learning pipeline** to assess credit risk us
   - Model retraining and evaluation
   - MLflow tracking
 
-### 📦 Docker
+###  Docker
 - Provides a reproducible environment with all required dependencies (e.g., scikit-learn, XGBoost, MLflow, Optuna).
 
-### 🔍 Optuna
+###  Optuna
 - Performs hyperparameter optimization using `OptunaSearchCV`.
 
-### 📊 MLflow
+###  MLflow
 - Tracks metrics, parameters, and model versions.
 - Automatically compares AUC and promotes best models to "production" stage.
 
-### 📈 SHAP
+###  SHAP
 - Computes feature importances to guide model retraining on top-ranked features.
 
-## 🚀 Running the Pipeline
+##  Running the Pipeline
 
 1. **Start Docker & Airflow**:
    ```bash
@@ -61,19 +61,19 @@ This project implements a **machine learning pipeline** to assess credit risk us
    ```
    Visit: `http://localhost:5000`
 
-## 📝 Dataset
+##  Dataset
 
 - Source: `data/credit_risk_dataset.csv`
 - Target variable: `loan_status` (renamed internally to `target`)
 - Includes categorical, numerical, and skewed variables cleaned before training.
 
-## 🧠 Model
+##  Model
 
 - Trained using `XGBClassifier` with optimized parameters.
 - Evaluated on metrics like Accuracy, F1, ROC AUC, etc.
 - Best-performing models automatically registered and versioned with MLflow.
 
-## 📌 Requirements
+##  Requirements
 
 If running outside Docker:
 
@@ -84,7 +84,7 @@ If running outside Docker:
 
 ---
 
-## 🙋‍♂️ Author
+##  Author
 
 Created as part of a modular ML pipeline demonstration using MLOps tools.
 
