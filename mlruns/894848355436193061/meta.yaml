@@ -1,0 +1,6 @@
+artifact_location: file:///opt/airflow/mlruns/894848355436193061
+creation_time: 1749575793618
+experiment_id: '894848355436193061'
+last_update_time: 1749575793618
+lifecycle_stage: active
+name: CreditRiskTracking

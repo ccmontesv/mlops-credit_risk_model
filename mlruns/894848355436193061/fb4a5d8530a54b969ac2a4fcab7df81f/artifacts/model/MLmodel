@@ -1,0 +1,38 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.13
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.0
+is_signature_from_type_hint: false
+mlflow_version: 2.22.1
+model_size_bytes: 1834608
+model_uuid: d30eceb8a24546af938a8c687e3cbf7b
+prompts: null
+run_id: fb4a5d8530a54b969ac2a4fcab7df81f
+signature:
+  inputs: '[{"type": "double", "name": "person_income", "required": true}, {"type":
+    "double", "name": "loan_grade", "required": true}, {"type": "double", "name":
+    "loan_percent_income", "required": true}, {"type": "double", "name": "loan_int_rate",
+    "required": true}, {"type": "long", "name": "person_home_ownership_RENT", "required":
+    true}, {"type": "long", "name": "loan_intent_VENTURE", "required": true}, {"type":
+    "double", "name": "loan_amnt", "required": true}, {"type": "long", "name": "person_home_ownership_OWN",
+    "required": true}, {"type": "double", "name": "person_emp_length", "required":
+    true}, {"type": "long", "name": "person_age", "required": true}, {"type": "long",
+    "name": "loan_intent_EDUCATION", "required": true}, {"type": "double", "name":
+    "cb_person_cred_hist_length", "required": true}, {"type": "long", "name": "loan_intent_HOMEIMPROVEMENT",
+    "required": true}, {"type": "long", "name": "loan_intent_PERSONAL", "required":
+    true}, {"type": "long", "name": "loan_intent_MEDICAL", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-06-10 17:27:52.204887'

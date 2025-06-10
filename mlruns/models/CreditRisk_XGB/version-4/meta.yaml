@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1749576824013
+current_stage: None
+description: null
+last_updated_timestamp: 1749576824013
+name: CreditRisk_XGB
+run_id: 897fff9f981c444d876446770572fbae
+run_link: null
+source: file:///opt/airflow/mlruns/894848355436193061/897fff9f981c444d876446770572fbae/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///opt/airflow/mlruns/894848355436193061/897fff9f981c444d876446770572fbae/artifacts/model
+user_id: null
+version: 4

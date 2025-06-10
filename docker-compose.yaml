@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  airflow:
+    image: apache/airflow:2.8.1-python3.10
+    container_name: airflow_ml_local
+    restart: always
+    environment:
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: sqlite:////opt/airflow/airflow.db
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      _PIP_ADDITIONAL_REQUIREMENTS: shap optuna xgboost mlflow scikit-learn pandas matplotlib optuna-integration[sklearn]
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data
+      - ./mlruns:/opt/airflow/mlruns
+      - ./airflow.db:/opt/airflow/airflow.db
+    ports:
+      - "8080:8080"
+      - "5500:5500"
+    command: >
+      bash -c "
+      airflow db init &&
+      airflow users create --username airflow --password airflow --firstname admin --lastname user --role Admin --email admin@example.com &&
+      airflow webserver & airflow scheduler
+      "
+    user: "${AIRFLOW_UID}:0"

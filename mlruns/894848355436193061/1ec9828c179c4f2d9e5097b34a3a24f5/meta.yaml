@@ -1,0 +1,15 @@
+artifact_uri: file:///opt/airflow/mlruns/894848355436193061/1ec9828c179c4f2d9e5097b34a3a24f5/artifacts
+end_time: 1749575796860
+entry_point_name: ''
+experiment_id: '894848355436193061'
+lifecycle_stage: active
+run_id: 1ec9828c179c4f2d9e5097b34a3a24f5
+run_name: CreditRisk_XGB_20250610_1716
+run_uuid: 1ec9828c179c4f2d9e5097b34a3a24f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749575793708
+status: 3
+tags: []
+user_id: airflow

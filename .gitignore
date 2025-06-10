@@ -1,0 +1,22 @@
+# Airflow logs and DB
+logs/
+*.db
+*.sqlite
+__pycache__/
+.env
+
+# Python cache
+*.pyc
+*.pyo
+
+# Dataset
+data/
+*.csv
+
+# IDEs
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
